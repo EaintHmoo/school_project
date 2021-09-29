@@ -1,0 +1,691 @@
+/*******************************/
+/********* General CSS *********/
+/*******************************/
+body {
+    color: #797979;
+    background: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+}
+h1,
+h2, 
+h3, 
+h4,
+h5, 
+h6 {
+    color: #4056A1;
+}
+a{
+    color:#D79922;
+    transition:.5s;
+}
+a:hover,
+a:active,
+a:focus {
+    color: #4056A1;
+    outline: none;
+    text-decoration: none;
+}
+.btn:focus,
+.form-control:focus {
+    box-shadow: none;
+}
+
+
+/*************************/
+/***** Top Bar CSS *******/
+/*************************/
+.top-bar {
+    position: relative;
+    height: 40px;
+    background: #4056A1;
+}
+
+.top-bar .top-bar-right {
+    padding-right: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.button{
+    padding-top: 3px;
+    justify-content:space-around;
+}
+
+.top-bar-right a{
+    font-size: smaller;
+    color:#D79922;
+    background:#4056A1;
+    border-radius:5px;
+    border:solid 1px #D79922;
+    transition:.5s;
+}
+.top-bar-right a:hover{
+    color:black;
+    background:#D79922;
+    transition:.5s;
+}
+@media (max-width: 991.98px) { 
+    .top-bar .top-bar-right {
+        padding-right: 15px; 
+    }
+}
+
+
+/**********************************/
+/*********** Nav Bar CSS **********/
+/**********************************/
+.navbar {
+    position: relative;
+    transition: .5s;
+    z-index: 999;
+}
+
+.navbar.nav-sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .3);
+}
+
+.navbar .navbar-brand {
+    margin: 0;
+    color: #ffffff;
+    line-height: 0px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: .5s;
+}
+
+.navbar span{
+    padding-left: 2px;
+    color: white;
+    font-size:25px;
+    text-transform: uppercase;
+    transition: .5s;
+}
+.navbar span h1{
+    color:white;
+    font-size:25px;
+    font-weight:bolder;
+}
+
+.navbar.nav-sticky .navbar-brand span {
+    color: #ffffff;
+}
+
+.navbar .navbar-brand img {
+    max-width: 100%;
+    max-height: 70px;
+}
+
+.navbar-dark .navbar-nav .nav-link,
+.navbar-dark .navbar-nav .nav-link:focus,
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link.active {
+    padding: 10px 10px 8px 10px;
+    color: #ffffff;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link.active {
+    background: rgba(256, 256, 256, .1);
+    transition: none;
+}
+
+.navbar .dropdown-menu {
+    margin-top: 0;
+    border: 0;
+    border-radius: 0;
+    background: #f8f9fa;
+}
+
+@media (min-width: 992px) {
+    .navbar {
+        position: absolute;
+        width: 100%;
+        top: 35px;
+        padding: 20px 60px;
+        background: rgba(0, 0, 0, .1) !important;
+        z-index: 9;
+    }
+    
+    .navbar.nav-sticky {
+        padding: 10px 60px;
+        background: #4056A1 !important;
+    }
+    
+    .navbar a.nav-link {
+        padding: 8px 15px;
+        font-size: 14px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+}
+
+@media (max-width: 991.98px) {   
+    .navbar {
+        padding: 15px;
+        background: #4056A1 !important;
+    }
+    
+    .navbar .navbar-brand span {
+        color: #ffffff;
+    }
+    
+    .navbar a.nav-link {
+        padding: 5px;
+    }
+    
+    .navbar .dropdown-menu {
+        box-shadow: none;
+    }
+}
+
+/**********************************/
+/***********About Us CSS **********/
+/**********************************/
+
+/***********About Us and Discipline CSS **********/
+.aboutus p{
+    text-align: justify;
+}
+.discipline p{
+    text-align: justify;
+}
+.discipline{
+    background:#F2F2F2;
+}
+
+/***********Vedio and Photo CSS **********/
+.first-row{
+    background:#4056A1;
+    column-gap:0;
+}
+.first-row,.first-row h3{
+    color:white;
+}
+.second-row{
+    background:#c9ccd6;
+    column-gap:0;
+}
+.second-row h3{
+    color:#797979;
+}
+.content-left{
+    position:relative;
+    top:50px;
+    text-align:justify;
+    margin:auto 30px 50px 100px;
+}
+.content-right{
+    position:relative;
+    top:50px;
+    text-align:justify;
+    margin:auto 100px 50px 30px;
+}
+@media (max-width:921px) { 
+    .content-left{
+        position:relative;
+        top:50;
+        margin:50px 50px;
+    }
+    .content-right{
+        position:relative;
+        top:0;
+        margin:50px 50px;
+    } 
+}
+@media (max-width:766px) { 
+    .content-left{
+        position:relative;
+        top:0;
+        padding:50px 50px 50px 20px;
+    }
+    .content-right{
+        position:relative;
+        top:0;
+        padding:50px 30px 50px 50px;
+    } 
+}
+/***********Carousel CSS **********/
+#carousel .card{
+    width:100%;
+    padding:5px 5px auto 5px;
+    margin:10px auto;
+    opacity:1;
+    transition:0.5s;
+}
+#carousel .card:hover{
+    opacity:0.5;
+    transition:0.5s;
+}
+#carousel a{
+    color:#D79922;
+    border-radius:5px;
+    border:solid 1px #D79922;
+    transition:.5s;
+}
+#carousel a:hover{
+    color:black;
+    background:#D79922;
+    transition:.5s;
+}
+#carousel .dropdown button{
+    color:#D79922;
+    border-radius:5px;
+    border:solid 1px #D79922;
+    transition:.5s;
+}
+#carousel .dropdown button:hover{
+    color:black;
+    background:#D79922;
+    transition:.5s;
+}
+#carousel .dropdown a{
+    border-radius:0px;
+    border:none;
+    color:#797979;
+}
+#searchbar input{
+    border:solid 1px #D79922;
+}
+#searchbar input:focus{
+    background:#D79922;
+    color:black;
+}
+#searchbar button{
+    border:solid 1px #D79922;
+    color:D79922;
+}
+#searchbar button:hover{
+    background:#D79922;
+    color:black;
+}
+#stu-yr li a:hover{
+    cursor:pointer;
+}
+/**********************************/
+/***********Footer CSS **********/
+/**********************************/
+.footer{
+    background: #4056A1;
+}
+.footer img{
+    width:100px;
+    border-radius: 35px;
+}
+.footer hr{
+    width:100px;
+    position:relative;
+    top:50px;
+    margin: auto 10px;
+    border:solid white 1px;
+    color:white;
+    opacity:1;
+}
+.footer .title{
+    color: white;
+    font-size:25px;
+    text-transform: uppercase;
+    transition: .5s;
+}
+.footer .title h1{
+    color:white;
+    font-size:25px;
+    font-weight:bolder;
+}
+.footer .title p{
+    color:white;
+    font-size:20px;
+    font-weight:300px;
+    text-transform: capitalize;
+}
+.footer .title p i{
+    color:white;
+    margin:auto 5px;
+    font-size:larger;
+}
+.sub-footer{
+    background:#24305E;
+    color:white;
+}
+.back-to-top {
+    position: fixed;
+    display: none;
+    background: #D79922;
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    line-height: 1;
+    font-size: 22px;
+    right: 15px;
+    bottom: 15px;
+    transition: background 0.5s;
+    z-index: 9;
+}
+
+.back-to-top:hover {
+    background: #4056A1;
+}
+
+.back-to-top:hover i {
+    color: #D79922;
+}
+
+.back-to-top i {
+    color: #4056A1;
+    padding-top: 10px;
+}
+
+/*******************************/
+/******* Page Header CSS *******/
+/*******************************/
+.page-header {
+    position: relative;
+    margin-bottom: 45px;
+    padding: 150px 0 90px 0;
+    text-align: center;
+    background: #D79922;
+}
+
+.page-header h2 {
+    position: relative;
+    color: #24305E;
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.page-header a {
+    position: relative;
+    padding: 0 12px;
+    font-size: 22px;
+    color: #24305E;
+    text-decoration: none;
+}
+
+.page-header a:hover {
+    color: #ffffff;
+}
+
+.page-header a::after {
+    position: absolute;
+    content: "/";
+    width: 8px;
+    height: 8px;
+    top: -2px;
+    right: -7px;
+    text-align: center;
+    color: #24305E;
+}
+
+.page-header a:last-child::after {
+    display: none;
+}
+
+@media (max-width: 767.98px) {
+    .page-header h2 {
+        font-size: 35px;
+    }
+    
+    .page-header a {
+        font-size: 18px;
+    }
+}
+
+
+/*******************************/
+/******* Student Enroll CSS *******/
+/*******************************/
+
+.rectangle{
+    width:200px;
+    height:50px;
+    text-align:center;
+    background:#E8EDFF;
+    border:2px solid #4056A1;
+    padding:10px 10px 5px 10px;
+    margin:auto;
+}
+.admission-link{
+    width:200px;
+    height:max-content;
+    background:#EFE2BA;
+    padding:30px 10px 30px 10px;
+    margin:auto;
+}
+.admission-link a{
+    text-decoration: none;
+    color:#F13C20;
+    font-size:18px;
+    padding-left: 10px;
+}
+.admission-link a:hover{
+    color:#4056A1;
+}
+.hr{
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    width:max-content;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin:20px auto;
+}
+.right{
+    float: right;
+}
+.stu-form{
+    padding:30px;
+    background:#F2F2F2;
+    width:90%;
+}
+.message{
+    color:#F1AA9A;
+}
+.sub-btn{
+    background:#4056A1;
+    color:white;
+    border-radius: 10px;
+}
+.sub-btn:hover{
+    background:#24305E;
+    color:hsl(39, 100%, 68%);
+}
+.can-btn{
+    background:#D79922;
+    color:white;
+    border-radius: 10px;
+}
+.can-btn:hover{
+    background:hsl(39, 95%, 50%);
+    color:#24305E;
+}
+
+.wd{
+    width:90%;
+}
+@media (max-width: 767.98px) {
+    .right{
+        float:none;
+        text-align:center;
+    }
+    .admission-link{
+        text-align:left;
+    }
+    .stu-form{
+        width: 100%;
+    }
+    .wd{
+        width:100%;
+    }
+
+}
+
+/*******************************/
+/******* Gallery CSS *******/
+/*******************************/
+.sub-header-p{
+    color:#D79922;
+}
+.header-h{
+    color:#D79922;
+}
+.sub-header-hr{
+    width:40px;
+    position:relative;
+    top:10px;
+    border: solid 1px #D79922;
+    margin: auto 10px;
+    color:#D79922;
+    opacity:1;
+}
+.header-hr{
+    width:50px;
+    position:relative;
+    top:20px;
+    border: solid 1px #D79922;
+    margin: auto 10px;
+    color:#D79922;
+    opacity:1;
+}
+.activities .card{
+    margin:10px auto;
+}
+
+.aa-btn{
+    color:#D79922;
+    border-radius:5px;
+    border:solid 1px #D79922;
+    transition:.5s;
+}
+.aa-btn:hover{
+    color:black;
+    background:#D79922;
+    transition:.5s;
+}
+.building img{
+    border:solid 1px #D79922;
+    opacity:1;
+    transition:.5s;
+    margin:10px auto;
+}
+.building img:hover{
+    opacity:0.5;
+    transition:.5s;
+}
+.building{
+    background:#E8EDFF;
+    padding:30px auto;
+}
+
+/*******************************/
+/******* Announcement CSS *******/
+/*******************************/
+.announce .card{
+    margin:10px auto;
+    background:#F2F2F2;
+}
+.announce .card .date{
+    padding-right:15px;
+}
+.announce .card .card-body .fifty-chars{
+    width: 50ch;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+@media (max-width: 767.98px) {
+    .announce .card .date{
+        padding-right:5px;
+    }
+}
+
+.news p{
+    text-align: justify;
+}
+
+/*******************************/
+/******* Contact CSS *******/
+/*******************************/
+.contact h5{
+    color:#D79922;
+}
+.contact table{
+    width:100%;
+}
+.contact iframe{
+    width:100%;
+}
+
+/*******************************/
+/******* Pagination CSS *******/
+/*******************************/
+button {
+    background: none;
+    appearance: none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    -moz-appearance: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .page-btn {
+    background: #ddd;
+    color: #2c303a;
+    height: 35px;
+    border-radius: 2px;
+    padding: 0 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    transition: background 0.3s ease;
+    margin: 0 2px
+  }
+  
+  .page-btn:first-of-type {
+    margin-left: 0;
+  }
+  
+  .page-btn:last-of-type {
+    margin-right: 0;
+  }
+  
+  .page-btn:not([class$="-page"]) {
+    width: 35px;
+  }
+  
+  .pagination-buttons {
+    display: flex;
+    align-items: center;
+  }
+  
+  .page-btn[class*="-page"] {
+    background: #ccc;
+    font-size: 0.6em;
+    font-weight: 700;
+  }
+  
+  .page-btn.active {
+    background: #717790;
+    color: #fff;
+  }
+  
+  .page-btn[disabled] {
+    opacity: 0.3;
+  }
+/*******************************/
+/******* Tabel CSS *******/
+/*******************************/
+#fee table{
+    border:solid 1px #E8EDFF;
+}
+#fee table th{
+    background:#4056A1;
+    color:white;
+    padding:5px;
+}
+#fee table td{
+    background:#E8EDFF;
+    padding:5px;
+}
+/**Image Placeholder**/
